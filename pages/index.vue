@@ -1,24 +1,24 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="container mx-auto">
+    <div class="flex flex-col items-center justify-center my-48">
       <Logo />
-      <h1 class="title">exam</h1>
-      <div class="links">
+      <h1 class="my-12 text-4xl font-bold text-gray-600">exam</h1>
+      <div class="pt-8">
         <a
-          href="https://nuxtjs.org/"
+          href="https://app.asana.com/0/1199987690132502/overview"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
+          class="p-2 mx-2 border-2 border-green-300 rounded-md"
         >
-          Documentation
+          Documentación Proyecto
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/MichiWoo/exam.git"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="p-2 mx-2 border-2 border-gray-600 rounded-md"
         >
-          GitHub
+          GitHub Proyecto.
         </a>
       </div>
     </div>
@@ -28,41 +28,3 @@
 <script>
 export default {}
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
