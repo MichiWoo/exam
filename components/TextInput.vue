@@ -4,7 +4,7 @@
     <input
       :id="name"
       v-model="inputValue"
-      class="w-full text-purple-700 bg-purple-100 border-purple-700 rounded shadow-xl border-1 focus:outline-none focus:ring-2 focus:border-transparent focus:ring-purple-700 focus:ring-offset-purple-700"
+      class="w-full text-purple-700 bg-purple-100 border-2 border-purple-700 rounded shadow-xl focus:outline-none focus:ring-2 focus:border-transparent focus:ring-purple-700 focus:ring-offset-purple-700"
       :name="name"
       :type="type"
       :placeholder="placeholder"
