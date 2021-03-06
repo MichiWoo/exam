@@ -41,9 +41,9 @@
 export default {
   name: 'Login',
   components: {
-    BlockButton: () => import('@/components/BlockButton.vue'),
+    BlockButton: () => import('@/components/buttons/BlockButton.vue'),
     SocialButton: () => import('@/components/SocialButton.vue'),
-    TextInput: () => import('@/components/TextInput.vue'),
+    TextInput: () => import('~/components/inputs/TextInput.vue'),
     CheckInput: () => import('@/components/CheckInput.vue'),
     Facebook: () => import('@/components/icons/Facebook'),
     Google: () => import('@/components/icons/Google'),

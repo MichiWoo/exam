@@ -1,9 +1,13 @@
 <template>
   <div>
-    <Header />
+    <header>
+      <Navbar />
+    </header>
     <main>
-      <div class="flex flex-col items-center justify-center my-48">
-        <Logo />
+      <div class="flex flex-col items-center justify-center my-20 lg:my-48">
+        <div class="flex items-center justify-center w-3/6 lg:w-1/6">
+          <Exam class="w-full" />
+        </div>
         <h1 class="my-12 text-4xl font-bold text-gray-600">ex@m</h1>
         <div class="pt-8">
           <a
@@ -33,7 +37,7 @@
 export default {
   name: 'Home',
   components: {
-    Header: () => import('@/components/Header'),
+    Navbar: () => import('@/components/Navbar'),
     Footer: () => import('@/components/Footer'),
   },
 }
