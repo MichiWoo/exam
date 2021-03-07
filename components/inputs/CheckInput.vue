@@ -5,13 +5,14 @@
       :for="name"
     >
       <div class="flex items-center justify-center">
-        <span class="mr-2">{{ label }}</span>
+        <span class="mr-2 font-semibold form-checkbox">{{ label }}</span>
         <input
           :id="name"
           v-model="inputValue"
           type="checkbox"
           :name="name"
-          class="text-purple-700 rounded"
+          class="w-5 h-5 text-purple-700 border-2 border-purple-700 checked:bg-purple-700 checked:border-transparent"
+          style="transition: all 0.15s ease 0s"
         />
       </div>
     </label>

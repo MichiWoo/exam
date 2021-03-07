@@ -44,7 +44,7 @@ export default {
     BlockButton: () => import('@/components/buttons/BlockButton.vue'),
     SocialButton: () => import('~/components/buttons/SocialButton.vue'),
     TextInput: () => import('~/components/inputs/TextInput.vue'),
-    CheckInput: () => import('@/components/CheckInput.vue'),
+    CheckInput: () => import('~/components/inputs/CheckInput.vue'),
     Facebook: () => import('@/components/icons/Facebook'),
     Google: () => import('@/components/icons/Google'),
   },
