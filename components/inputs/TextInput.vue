@@ -1,22 +1,16 @@
 <template>
-  <div class="flex flex-col justify-center w-full flex-start">
-    <label class="text-purple-700" :for="name">{{ label }}</label>
-    <input
-      :id="name"
-      v-model="inputValue"
-      class="w-full text-purple-700 bg-purple-100 border-2 border-purple-700 rounded shadow-xl focus:outline-none focus:ring-2 focus:border-transparent focus:ring-purple-700 focus:ring-offset-purple-700"
-      :name="name"
+  <div class="relative w-full mb-3">
+    <label
+      class="block mb-2 text-xs font-bold text-purple-700 uppercase"
+      :for="name"
+      >{{ label }}</label
+    ><input
       :type="type"
+      class="w-full px-3 py-3 text-sm text-purple-700 placeholder-purple-400 bg-white rounded shadow focus:outline-none focus:ring-2 focus:border-transparent focus:ring-purple-700 focus:ring-offset-purple-700"
+      :name="name"
       :placeholder="placeholder"
+      style="transition: all 0.15s ease 0s"
     />
-    <div
-      v-show="errorMessage"
-      class="flex items-center justify-start w-full mt-1"
-    >
-      <span v-show="errorMessage" class="text-red-700">
-        {{ errorMessage }}
-      </span>
-    </div>
   </div>
 </template>
 
@@ -27,10 +21,6 @@ export default {
     type: {
       type: String,
       default: 'text',
-    },
-    value: {
-      type: String,
-      default: '',
     },
     name: {
       type: String,
@@ -44,12 +34,6 @@ export default {
       type: String,
       default: '',
     },
-  },
-  data() {
-    return {
-      errorMessage: '',
-      inputValue: '',
-    }
   },
 }
 </script>

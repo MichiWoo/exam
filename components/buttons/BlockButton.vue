@@ -1,7 +1,8 @@
 <template>
   <button
-    class="w-full h-12 text-white bg-purple-700 rounded-full hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-offset-purple-700 focus:ring-opacity-50"
-    type="submit"
+    class="w-full px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase bg-purple-900 rounded shadow outline-none active:bg-purple-700 hover:shadow-lg focus:outline-none"
+    type="button"
+    style="transition: all 0.15s ease 0s"
   >
     <slot />
   </button>
