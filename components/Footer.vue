@@ -1,5 +1,5 @@
 <template>
-  <footer class="relative pt-8 pb-6 bg-gray-300">
+  <footer class="relative pt-8 pb-6 mt-16 bg-gray-300 lg:mt-24">
     <div
       class="absolute top-0 left-0 right-0 bottom-auto w-full -mt-20 overflow-hidden pointer-events-none"
       style="height: 80px; transform: translateZ(0px)"

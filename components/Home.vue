@@ -24,7 +24,7 @@
             rel="noopener noreferrer"
             class="p-2 mx-2 border-2 border-gray-600 rounded-md"
           >
-            GitHub Ornzanización.
+            GitHub Organización.
           </a>
         </div>
       </div>

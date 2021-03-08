@@ -8,10 +8,10 @@
       <div
         class="relative flex justify-between w-full lg:w-auto lg:static lg:block lg:justify-start"
       >
-        <a
+        <nuxt-link
           class="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-purple-700 uppercase whitespace-no-wrap"
-          href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-          >Nombre de la Aplicacion</a
+          to="/"
+          >Ex@m</nuxt-link
         ><button
           class="block px-3 py-1 text-xl leading-none bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
           type="button"
@@ -24,15 +24,6 @@
         class="items-center flex-grow bg-purple-100 lg:flex lg:bg-transparent lg:shadow-none"
         :class="{ hidden: !showMenu, block: showMenu }"
       >
-        <ul class="flex flex-col mr-auto list-none lg:flex-row">
-          <li class="flex items-center">
-            <a
-              class="flex items-center px-3 py-4 text-xs font-bold text-gray-800 uppercase lg:text-purple-700 lg:hover:text-purple-300 lg:py-2"
-              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"
-              >Docs</a
-            >
-          </li>
-        </ul>
         <ul class="flex flex-col list-none lg:flex-row lg:ml-auto">
           <li class="flex items-center">
             <a
@@ -58,11 +49,13 @@
             >
           </li>
           <li class="flex items-center">
-            <Button
-              class="text-white bg-purple-700 active:bg-purple-100 hover:bg-purple-400"
-            >
-              <nuxt-link to="/login"> Login </nuxt-link>
-            </Button>
+            <nuxt-link to="/login">
+              <Button
+                class="text-white bg-purple-700 active:bg-purple-100 hover:bg-purple-400"
+              >
+                Login
+              </Button>
+            </nuxt-link>
           </li>
         </ul>
       </div>
