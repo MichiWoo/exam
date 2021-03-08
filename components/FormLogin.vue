@@ -37,8 +37,8 @@
     </div>
     <div class="flex flex-wrap mt-6">
       <div class="w-1/2">
-        <a href="/" class="text-purple-700"
-          ><small>¿Olvidaste la contraseña?</small></a
+        <nuxt-link to="/recuperar-password" class="text-purple-700"
+          ><small>¿Olvidaste la contraseña?</small></nuxt-link
         >
       </div>
       <div class="w-1/2 text-right">
